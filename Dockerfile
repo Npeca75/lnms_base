@@ -6,4 +6,5 @@ RUN apt-get -y update \
  && apt-get install --no-install-recommends -y acl curl fping graphviz imagemagick mysql-client mtr-tiny nginx-full nmap sudo snmp snmpd snmptrapd rsyslog tini \
  rrdtool rrdcached memcached whois unzip dialog mc iputils-ping net-tools cron locales mailutils git \
  python3-pymysql python3-dotenv python3-redis python3-setuptools python3-systemd python3-dev python3-pip python3-memcache php-memcached \
+ && curl -sSL https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer \
  && apt-get clean && apt-get autoclean && apt-get autoremove --purge && update-locale
